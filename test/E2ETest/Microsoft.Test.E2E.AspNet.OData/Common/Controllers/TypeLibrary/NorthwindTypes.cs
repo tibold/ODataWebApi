@@ -9,7 +9,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data.Objects.DataClasses;
+using System.Data.Entity.Core.Objects.DataClasses;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 

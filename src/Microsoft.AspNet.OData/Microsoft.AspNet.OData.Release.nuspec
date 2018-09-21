@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>Microsoft.AspNet.OData</id>
+    <id>Microsoft.AspNet.OData.NetStandard</id>
     <title>Microsoft ASP.NET Web API 2.2 for OData v4.0</title>
-    <version>$VersionNuGetSemantic$</version>
+    <version>7.0.1</version>
     <authors>Microsoft</authors>
     <copyright>&#169; Microsoft Corporation. All rights reserved.</copyright>
     <description>This package contains everything you need to create OData v4.0 endpoints using ASP.NET Web API and to support OData query syntax for your web APIs.</description>
@@ -14,21 +14,21 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>Microsoft AspNet WebApi AspNetWebApi OData</tags>
     <dependencies>
-      <dependency id="Microsoft.AspNet.WebApi.Client" version="$AspNetPackageDependency$" />
-      <dependency id="Microsoft.AspNet.WebApi.Core" version="$AspNetPackageDependency$" />
-      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="$DependencyInjection1PackageDependency$" />
-      <dependency id="Microsoft.Extensions.DependencyInjection" version="$DependencyInjection1PackageDependency$" />
-      <dependency id="Microsoft.OData.Core" version="$ODataLibPackageDependency$" />
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.6" />
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.6" />
+      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.1.1" />
+      <dependency id="Microsoft.Extensions.DependencyInjection" version="2.1.1" />
+      <dependency id="Microsoft.OData.Core" version="7.5.1" />
     </dependencies>
     <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System.Net.Http" targetFramework="net45"/>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework="net471"/>
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="$ProductRoot$\Microsoft.AspNet.OData.dll" target="lib\net45" />
-    <file src="$ProductRoot$\Microsoft.AspNet.OData.pdb" target="lib\net45" />
-    <file src="$ProductRoot$\Microsoft.AspNet.OData.xml" target="lib\net45" />
-    <file src="$SourcesRoot$\src\Microsoft.AspNet.OData\**\*.cs" target="src\Microsoft.AspNet.OData" />
-    <file src="$SourcesRoot$\src\Microsoft.AspNet.OData.Shared\**\*.cs" target="src\Microsoft.AspNet.OData.Shared" />
+    <file src="..\..\bin\Release\Microsoft.AspNet.OData.dll" target="lib\net471" />
+    <file src="..\..\bin\Release\Microsoft.AspNet.OData.pdb" target="lib\net471" />
+    <file src="..\..\bin\Release\Microsoft.AspNet.OData.xml" target="lib\net471" />
+    <file src="..\..\src\Microsoft.AspNet.OData\**\*.cs" target="src\Microsoft.AspNet.OData" />
+    <file src="..\..\src\Microsoft.AspNet.OData.Shared\**\*.cs" target="src\Microsoft.AspNet.OData.Shared" />
   </files>
 </package>
